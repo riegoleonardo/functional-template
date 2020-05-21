@@ -3,7 +3,9 @@
 (defn flast
   "Gets the last element of a given secuence."
   [x]
-  (throw (Exception. "Not implemented."))
+  (when-not (empty? x)
+    (nth x (dec (count x))))
+
 )
 
 
